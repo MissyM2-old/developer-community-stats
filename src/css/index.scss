@@ -116,7 +116,7 @@ $color: black;
 }
 
 .theme-dark,
-.theme-dark-blue,
+.theme-buttondark-blue,
 .theme-dark-red {
   a {
     color: #79aeff;
@@ -136,6 +136,24 @@ a {
   text-decoration: none;
   color: var(--theme-color);
 }
+
+.options {
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    border:1px solid white;
+    height: 100%;
+    width: 40%;
+}
+
+.option {
+  color: white;
+  border: 1px solid pink;
+  width: 60%;
+  margin-left:auto;
+  text-align:center;
+}
+
 
 .section-container {
   background-color: #fff;
@@ -326,6 +344,7 @@ select:disabled {
       }
     }
   }
+
 
   @media only screen and (max-width: 375px) {
     min-width: 18rem;

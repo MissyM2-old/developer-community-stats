@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+/* import { GoCheck } from 'react-icons/go' */
 import Image from 'gatsby-image'
 import Popover from '../Popover'
 import { GrLinkedin, GrTwitter, GrGithub } from 'react-icons/gr'
@@ -45,6 +46,19 @@ const NavBar = React.memo(props => {
         <Link to="/" className="lg-navbar__item lg-navbar__header">
           Developer Community Stats
         </Link>
+       {/*  <nav>
+          <ul>
+            <li><GoCheck className="go-check"/><Link to="/stat-overview" className="lg-navbar__item">Overview stats</Link></li>
+            <li><GoCheck className="go-check"/><Link to="/" className="lg-navbar__item">Developer stats</Link></li>
+          </ul>
+        </nav> */}
+        {/* <div className="options">
+          <div className="option">
+                     </div>
+          <div className="option">
+                      </div>
+        </div> */}
+
         <ThemePicker />
       </nav>
     </>
